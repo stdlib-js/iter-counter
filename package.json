@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/iter-counter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Create an iterator which iteratively returns the number of iterated values.",
   "license": "Apache-2.0",
   "author": {

@@ -155,7 +155,7 @@ while ( true ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/iter/length`][@stdlib/iter/length]</span><span class="delimiter">: </span><span class="description">return an iterator's length.</span>
+-   <span class="package-name">[`@stdlib/iter-length`][@stdlib/iter/length]</span><span class="delimiter">: </span><span class="description">return an iterator's length.</span>
 
 </section>
 

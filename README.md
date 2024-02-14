@@ -45,14 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/iter-counter
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import iterCounter from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-counter@deno/mod.js';
+var iterCounter = require( '@stdlib/iter-counter' );
 ```
 
 #### iterCounter( iterator )
@@ -60,7 +78,7 @@ import iterCounter from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-counter@deno
 Returns an [iterator][mdn-iterator-protocol] which iteratively computes the number of [iterated][mdn-iterator-protocol] values (i.e., the cumulative count).
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 var it = iterCounter( array2iterator( [ 10, 20, 30, 40 ] ) );
 // returns <Object>
@@ -107,8 +125,8 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@deno/mod.js';
-import iterCounter from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-counter@deno/mod.js';
+var randu = require( '@stdlib/random-iter-randu' );
+var iterCounter = require( '@stdlib/iter-counter' );
 
 // Create a seeded iterator for generating pseudorandom numbers:
 var rand = randu({
@@ -165,7 +183,7 @@ while ( true ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -195,8 +213,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/iter-counter.svg
 [npm-url]: https://npmjs.org/package/@stdlib/iter-counter
 
-[test-image]: https://github.com/stdlib-js/iter-counter/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/iter-counter/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/iter-counter/actions/workflows/test.yml/badge.svg?branch=v0.2.0
+[test-url]: https://github.com/stdlib-js/iter-counter/actions/workflows/test.yml?query=branch:v0.2.0
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/iter-counter/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/iter-counter?branch=main
@@ -232,7 +250,7 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/iter/length]: https://github.com/stdlib-js/iter-length/tree/deno
+[@stdlib/iter/length]: https://github.com/stdlib-js/iter-length
 
 <!-- </related-links> -->
 

@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2019 The Stdlib Authors.
@@ -16,16 +16,23 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { Iterator as Iter, IterableIterator } from '@stdlib/types/iter';
+
+// Define a union type representing both iterable and non-iterable iterators:
+type Iterator = Iter | IterableIterator;
 
 /**
-* Create an iterator which iteratively computes the number of iterated values.
+* Returns an iterator which iteratively computes the number of iterated values.
 *
-* @module @stdlib/iter-counter
+* @param iterator - input iterator
+* @returns iterator
 *
 * @example
 * var randu = require( '@stdlib/random-iter-randu' );
-* var iterCounter = require( '@stdlib/iter-counter' );
 *
 * var iter = iterCounter( randu() );
 *
@@ -40,12 +47,9 @@
 *
 * // ...
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function iterCounter( iterator: Iterator ): Iterator;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = iterCounter;
